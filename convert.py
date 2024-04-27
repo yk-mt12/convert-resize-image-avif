@@ -16,4 +16,4 @@ for file in files:
     new_height = int((new_width / width) * height)
     img_resize = img.resize((new_width, new_height), resample=Image.LANCZOS)
     image = img_resize.convert("RGB")
-    img_resize.save(os.path.join(new_dir_name, file_name + ".jpeg"), format="JPEG")
+    img_resize.save(os.path.join(new_dir_name, file_name + ".avif"), format="avif")
